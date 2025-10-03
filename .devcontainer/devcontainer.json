@@ -1,0 +1,16 @@
+{
+  "name": "React (Node 18) devcontainer",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:0-18",
+  "postCreateCommand": "npm ci || npm install",
+  "forwardPorts": [3000],
+  "remoteUser": "vscode",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vsliveshare.vsliveshare",
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint"
+      ]
+    }
+  }
+}
